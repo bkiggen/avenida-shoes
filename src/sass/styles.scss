@@ -1,0 +1,76 @@
+$font-stack: 'Faster One', sans-serif;
+$primary-font-color: orange;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-font-color;
+  background-color: white;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #272729;
+}
+
+header {
+  position: relative;
+  p {
+    position: absolute;
+    text-align: center;
+
+  }
+}
+
+.nav {
+  width: 20%;
+  min-width: 280px;
+  height: 100%;
+  max-height: 1500px;
+  background-color: rgba(39, 39, 41, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  .logo-tag {
+    text-align: center;
+
+    width: 25%;
+    min-width: 320px;
+    height: 70px;
+    background-color: #FEE251;
+    p {
+      margin-top: 10px;
+      font-size: 40px;
+      color: black;
+    }
+  }
+  ul {
+    margin-top: 60px;
+    list-style: none;
+
+    li {
+      padding-bottom: 30px;
+      font-size: 20px;
+      font-family: 'Hiragino Sans';
+      font-weight: lighter;
+      a:hover, a:active {
+        color: white;
+      }
+      .active {
+        color: white;
+      }
+      a {
+        color: lighten(grey, 20);
+      }
+    }
+  }
+}
