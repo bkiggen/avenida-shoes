@@ -1,7 +1,6 @@
 {
   "name": "avenida",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,5 +25,14 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkiggen/avenida-shoes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bkiggen/avenida-shoes/issues"
+  },
+  "homepage": "https://github.com/bkiggen/avenida-shoes#readme",
+  "description": ""
 }

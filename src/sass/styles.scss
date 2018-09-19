@@ -1,5 +1,7 @@
-$font-stack: 'Faster One', sans-serif;
-$primary-font-color: orange;
+$headers: 'Faster One', sans-serif;
+$font-stack: 'Hiragino Sans';
+$yellow: #FEE251;
+$primary-font-color: white;
 
 body {
   font: 100% $font-stack;
@@ -22,11 +24,21 @@ a {
 
 header {
   position: relative;
-  p {
+  .slogan {
+    letter-spacing: 2px;
+    font-weight: lighter;
+    // background-color: rgba(39, 39, 41, 0.7);
+    text-align: left;
+    width: 257px;
     position: absolute;
-    text-align: center;
-
+    top: 250px;
+    left: 45%;
+    padding: 20px;
   }
+}
+
+.fas {
+  color: white;
 }
 
 .nav {
@@ -42,7 +54,7 @@ header {
   flex-direction: column;
   .logo-tag {
     text-align: center;
-
+    font-family: $headers;
     width: 25%;
     min-width: 320px;
     height: 70px;
@@ -73,4 +85,55 @@ header {
       }
     }
   }
+}
+
+.shopNowButton {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 14px;
+  background-color: $yellow;
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+}
+
+.shopNowButton:hover {
+  background-color: lighten($yellow, 15);
+  transform: scale(1.05);
+}
+
+
+.heroImage{
+  position: relative;
+  .headerDivider {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    position: absolute;
+    right: 20px;
+    bottom: 200px;
+    .icons {
+      margin-right: 15px;
+    }
+    i {
+      padding-right: 4px;
+    }
+    hr:first-of-type {
+      width: 30vw;
+    }
+    hr:nth-of-type(2){
+      width: 10vw;
+    }
+  }
+}
+
+.right-bar-1-items{
+  img {
+    height: 150px;
+  }
+}
+
+.social-image {
+  height: 150px;
 }
