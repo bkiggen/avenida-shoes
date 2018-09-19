@@ -14,7 +14,6 @@ a {
   text-decoration: none;
 }
 
-
 .main {
   max-width: 1550px;
   margin: 0 auto;
@@ -25,13 +24,13 @@ a {
 header {
   position: relative;
   .slogan {
+    font-size: 1.1vw;
     letter-spacing: 2px;
     font-weight: lighter;
-    // background-color: rgba(39, 39, 41, 0.7);
     text-align: left;
-    width: 257px;
+    width: 20vw;
     position: absolute;
-    top: 250px;
+    top: 225px;
     left: 45%;
     padding: 20px;
   }
@@ -96,6 +95,7 @@ header {
   height: 40px;
   border-radius: 2px;
   border: none;
+  margin-top: 10px;
 }
 
 .shopNowButton:hover {
@@ -105,28 +105,49 @@ header {
 
 
 .heroImage{
+  display: flex;
+  flex-direction: column;
   position: relative;
   .headerDivider {
-    display: flex;
-    align-items: center;
-    width: 70vw;
     position: absolute;
+    bottom: 300px;
     right: 20px;
-    bottom: 200px;
-    .icons {
-      margin-right: 15px;
-    }
-    i {
-      padding-right: 4px;
-    }
-    hr:first-of-type {
-      width: 30vw;
-    }
-    hr:nth-of-type(2){
-      width: 10vw;
-    }
   }
 }
+
+.headerDivider {
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  max-width: 1179px;
+  min-width: 700px;
+  .icons {
+    margin-right: 15px;
+  }
+  i {
+    padding-right: 4px;
+  }
+  hr:first-of-type {
+    width: 30vw;
+    max-width: 595px;
+  }
+  hr:nth-of-type(2){
+    width: 10vw;
+    max-width: 195px;
+  }
+}
+
+.divide {
+  position: relative;
+  width: 100%;
+}
+.aboutDivider {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+
 
 .right-bar-1-items{
   img {
@@ -136,4 +157,159 @@ header {
 
 .social-image {
   height: 150px;
+}
+
+.left-bar-1 {
+  transform: translate(0,-50%);
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-left: 80px;
+  text-align: right;
+    h3 {
+      margin-left: 100px;
+    }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:baseline;
+    hr {
+      width: 100px;
+    }
+    button {
+      background-color: transparent;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+.featuredSection {
+  display: flex;
+}
+
+.right-bar-item-group {
+  transform: translate(0,-37%);
+  display: flex;
+  margin: 0 auto;
+  max-width: 1150px;
+  width: 70vw;
+  justify-content: center;
+  .right-bar-1-items {
+      // padding-left: 25px;
+      width: 15%;
+      margin: 0 3vw;
+      img {
+        max-width: 250px;
+        width: 15vw;
+        height: auto;
+      }
+      h5 {
+        margin-bottom: 5px;
+      }
+      h6 {
+        margin-top: 5px;
+        color: darken(white, 60%);
+      }
+      .grayParagraphs{
+        font-size: .7em;
+        color: darken(white, 30%);
+        width: 15vw;
+        max-width: 250px;
+        }
+      .yellowParagraphs {
+        color: $yellow;
+        font-size: .6em;
+      }
+    }
+  }
+
+.aboutSection {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.right-bar-about {
+  h1 {
+    width: 200px;
+    margin-block-start: 0;
+  }
+  p {
+    font-size: .95em;
+    color: darken(white, 30%);
+  }
+  p:first-of-type {
+    width: 500px;
+    font-style: italic;
+    font-size: 1.05em;
+    color: white;
+  }
+  padding-left: 100px;
+  width: 400px;
+}
+
+.left-bar-2 {
+  width: 280px;
+  text-align: right;
+}
+
+.right-bar-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-bar-item-group-2 {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  display: grid;
+  grid-template-columns: 18vw 14vw 11vw;
+  grid-template-rows: 12vw 12vw 12vw;
+  grid-gap: 1.2vw;
+  grid-template-areas:
+            "main main side1"
+            "main main side2"
+            "side3 side4 side4";
+  #thing1 {
+    grid-area: main;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #thing2 {
+    grid-area: side1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #thing3 {
+    grid-area: side2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #thing4 {
+    grid-area: side3;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #thing5 {
+    grid-area: side4;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+
 }
