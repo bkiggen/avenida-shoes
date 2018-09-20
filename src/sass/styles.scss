@@ -8,6 +8,7 @@ body {
   color: $primary-font-color;
   background-color: white;
   margin: 0;
+  z-index: -5;
 }
 
 a {
@@ -242,7 +243,7 @@ header {
     color: darken(white, 30%);
   }
   p:first-of-type {
-    width: 500px;
+    width: 400px;
     font-style: italic;
     font-size: 1.05em;
     color: white;
@@ -252,16 +253,22 @@ header {
 }
 
 .left-bar-2 {
-  width: 280px;
+  width: 200px;
+  margin-left: 80px;
   text-align: right;
 }
 
 .right-bar-2 {
+  padding-top: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  h3 {
+    margin-left: 100px;
+  }
 }
 
 .right-bar-item-group-2 {
+  margin-right: 70px;
   img {
     width: 200px;
     height: 200px;
@@ -309,7 +316,147 @@ header {
       height: 100%;
     }
   }
+}
 
-
+.image {
+  position: relative;
 
 }
+
+.social-hr-container {
+  display: flex;
+  position: absolute;
+  left: 40px;
+  top: -100px;
+  width: 500px;
+}
+
+.fa-shoe-prints {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+#social-hr {
+  width: 400px;
+}
+
+.socialMediaSection {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  hr {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    border-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+  }
+  img {
+    height: 250px;
+  }
+  h1{
+    font-size: 60px;
+  }
+}
+
+.socialMediaUser{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    margin-block-start: 0;
+  }
+  p {
+    width: 80%;
+    max-width: 500px;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+  }
+  button {
+    transform: scale(0.9);
+  }
+}
+
+
+#social-subhead {
+  color: darken(white, 30%);
+  font-style: italic;
+  margin-bottom: 100px;
+  width: 500px;
+
+}
+
+.imageContainer {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+  // transform: translateY(-25%);
+}
+
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bottomFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $yellow;
+  color: #272729;
+  p{
+    font-size: 11px;
+  }
+  .logoFooter {
+    font-family: $headers;
+    font-size: 24px;
+  }
+  .socialIcons {
+    font-size: 20px;
+    i {
+      padding-right: 7px;
+    }
+  }
+}
+
+
+.subscribeSection {
+  background-image: url("../assets/img/footer.png");
+  height: 1050px;
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+  }
+  input, button {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    min-width: 120px;
+  }
+  // button {
+  //   padding: 10px;
+  //   font-size: 15px;
+  //   border: none;
+  //   border-radius: 15px;
+  //   background-color: $yellow;
+  //   }
+  }
